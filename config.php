@@ -10,10 +10,10 @@ $config = [
     'appId' => 'wx788072032f7e5f22',
 
     // 微信小程序 AppSecret
-    'appSecret' => '',
+    'appSecret' => '64c475903f6fa538216ff68f3d06e0e4 ',
 
     // 使用腾讯云代理登录
-    'useQcloudLogin' => true,
+    'useQcloudLogin' => false,
 
     /**
      * MySQL 配置，用来存储 session 和用户信息
@@ -25,7 +25,7 @@ $config = [
         'port' => 3306,
         'user' => 'root',
         'db'   => 'cAuth',
-        'pass' => 'wx788072032f7e5f22',
+        'pass' => 'Guojing1987109__',
         'char' => 'utf8mb4'
     ],
 
