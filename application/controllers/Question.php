@@ -7,9 +7,9 @@ class Question extends CI_Controller
     public function index()
     {
         $data = $this->dealData();
-        if(!$data) return json_encode(['code'=>1,'msg'=>'数据不完整']);
-        if(!$_POST['openid']) return json_encode(['code'=>1,'msg'=>'用户信息缺失']);
-        return json_encode(['code'=>0,'msg'=>'ok']);
+        if(!$data) echo json_encode(['code'=>1,'msg'=>'数据不完整']);
+        if(!$_POST['openid']) echo json_encode(['code'=>1,'msg'=>'用户信息缺失']);
+        echo json_encode(['code'=>0,'msg'=>'ok']);
     }
 
     public function dealData()
