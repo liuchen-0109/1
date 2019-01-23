@@ -101,4 +101,9 @@ class CI_Controller {
 					);
 	}
 
+	public function getInput(){
+        $input = file_get_contents('php://input');
+        if(!$input) return [];
+        return json_decode($input);
+    }
 }
