@@ -1,15 +1,21 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-
+use QCloud_WeApp_SDK\Model\Question as questionModel;
 class Question extends CI_Controller
 {
     public function index()
     {
+        if(!$_POST['openid']) echo json_encode(['code'=>1,'msg'=>'用户信息缺失']);
         $data = $this->dealData();
         if(!$data) echo json_encode(['code'=>1,'msg'=>'数据不完整']);
-        if(!$_POST['openid']) echo json_encode(['code'=>1,'msg'=>'用户信息缺失']);
-        echo json_encode(['code'=>0,'msg'=>'ok']);
+        $data['openid'] = $_POST['openid'];
+        $data['type'] = $_POST['type']?$_POST['type']:1;
+        $data['status'] = $_POST['status']?$_POST['status']:1;
+        $data['create_time'] = $_SERVER['REQUEST_TIME'];
+        $res = questionModel::storeQuestion($data);
+        if(!$res) echo json_encode(['code'=>1,'msg'=>'保存数据失败']);
+        echo json_encode(['code'=>0,'msg'=>'成功']);
     }
 
     public function dealData()
