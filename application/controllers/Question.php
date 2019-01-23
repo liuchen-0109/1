@@ -46,8 +46,8 @@ class Question extends CI_Controller
     function getQuestion(){
         if(!isset($_POST['id'])) return  $this->outPut(1,'参数缺失');
         $res = questionModel::findQuestionById($_GET['id']);
-        if(!$res) echo json_encode(['code'=>1,'msg'=>'没有查询到数据']);
-        echo json_encode(['code'=>0,'data'=>$res]);
+        if(!$res) return json_encode(['code'=>1,'msg'=>'没有查询到数据']);
+        return json_encode(['code'=>0,'data'=>$res]);
     }
 
 }
