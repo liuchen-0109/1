@@ -43,4 +43,11 @@ class Question extends CI_Controller
     }
 
 
+    function getQuestion(){
+        if(!$_GET['id']) echo json_encode(['code'=>1,'msg'=>'参数缺失']);
+        $res = questionModel::findQuestionById($_GET['id']);
+        if(!$res) echo json_encode(['code'=>1,'msg'=>'没有查询到数据']);
+        echo json_encode(['code'=>0,'data'=>$res]);
+    }
+
 }

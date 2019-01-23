@@ -12,4 +12,8 @@ class Question
 
     }
 
+    public static function findQuestionById ($id) {
+        return DB::row('question', ['*'], compact('id'));
+    }
+
 }
