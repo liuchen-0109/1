@@ -6,16 +6,16 @@ class Question extends CI_Controller
 {
     public function index()
     {
-        if(!$_POST['openid']) echo json_encode(['code'=>1,'msg'=>'用户信息缺失']);
+        if(!$_POST['openid']) return $this->outPut(1,'用户信息缺失');
         $data = $this->dealData();
-        if(!$data) echo json_encode(['code'=>1,'msg'=>'数据不完整']);
+        if(!$data) return  $this->outPut(1,'数据不完整');
         $data['openid'] = $_POST['openid'];
         $data['type'] = $_POST['type']?$_POST['type']:1;
         $data['status'] = $_POST['status']?$_POST['status']:1;
         $data['create_time'] = $_SERVER['REQUEST_TIME'];
         $res = questionModel::storeQuestion($data);
-        if(!$res) echo json_encode(['code'=>1,'msg'=>'保存数据失败']);
-        echo json_encode(['code'=>0,'msg'=>'成功']);
+        if(!$res) return $this->outPut(1,'保存数据失败');
+        return $this->outPut(0,'成功');
     }
 
     public function dealData()
@@ -44,7 +44,7 @@ class Question extends CI_Controller
 
 
     function getQuestion(){
-        if(!$_GET['id']) echo json_encode(['code'=>1,'msg'=>'参数缺失']);
+        if(!$_GET['id'])  $this->outPut(1,'参数缺失');
         $res = questionModel::findQuestionById($_GET['id']);
         if(!$res) echo json_encode(['code'=>1,'msg'=>'没有查询到数据']);
         echo json_encode(['code'=>0,'data'=>$res]);

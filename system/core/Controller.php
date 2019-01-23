@@ -106,4 +106,13 @@ class CI_Controller {
         if(!$input) return [];
         return json_decode($input);
     }
+     public function outPut($code=0,$msg){
+	        $data['code'] = $code;
+            if(is_array($msg)){
+                $data['data'] = $msg;
+            }else{
+                $data['msg'] = $msg;
+            }
+            echo json_encode($data);
+     }
 }
