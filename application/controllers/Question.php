@@ -10,6 +10,7 @@ class Question extends CI_Controller
         if(!$data) return json_encode(['code'=>1,'msg'=>'数据不完整']);
         if(!$_POST['openid']) return json_encode(['code'=>1,'msg'=>'用户信息缺失']);
         var_dump($data);
+        return json_encode(['code'=>0,'msg'=>'ok']);
     }
 
     public function dealData()
