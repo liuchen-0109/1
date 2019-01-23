@@ -8,7 +8,7 @@ class Question extends CI_Controller {
 //       $data =  $this->getInput();
         var_dump($_POST);
         var_dump($_POST['title_one']);
-        var_dump($_POST['userInfo']);
+        var_dump($_POST['userInfo']->openId);
     }
     public function haha() {
        echo '12312';
