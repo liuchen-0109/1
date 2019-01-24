@@ -56,6 +56,7 @@ class Question extends CI_Controller
     private function makeData($res)
     {
         $data['type'] = $res->type;
+        $data['id'] = $res->id;
         if ($res->title_one) {
             $data['question']['one'] = [
                 'title' => $res->title_one,
