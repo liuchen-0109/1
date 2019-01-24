@@ -7,7 +7,7 @@ class Question extends CI_Controller
 {
     public function index()
     {
-        if (!$_POST['openid']) return $this->outPut(1, '用户信息缺失');
+        if (!isset($_POST['openid'])) return $this->outPut(1, '用户信息缺失');
         $data = $this->dealData();
         if (!$data) return $this->outPut(1, '数据不完整');
         $data['openid'] = $_POST['openid'];
@@ -22,19 +22,20 @@ class Question extends CI_Controller
     public function dealData()
     {
         $data = [];
-        if ($_POST['title_one'] && $_POST['one_A'] && $_POST['one_B'] && $_POST['one_C']) {
+
+        if (isset($_POST['title_one'] , $_POST['one_A'] , $_POST['one_B'] , $_POST['one_C'])) {
             $data['title_one'] = $_POST['title_one'];
             $data['one_A'] = $_POST['one_A'];
             $data['one_B'] = $_POST['one_B'];
             $data['one_C'] = $_POST['one_C'];
         }
-        if ($_POST['title_two'] && $_POST['two_A'] && $_POST['two_B'] && $_POST['two_C']) {
+        if (isset($_POST['title_two'] , $_POST['two_A'] , $_POST['two_B'] , $_POST['two_C'])) {
             $data['title_two'] = $_POST['title_two'];
             $data['two_A'] = $_POST['two_A'];
             $data['two_B'] = $_POST['two_B'];
             $data['two_C'] = $_POST['two_C'];
         }
-        if ($_POST['title_three'] && $_POST['three_A'] && $_POST['three_B'] && $_POST['three_C']) {
+        if (isset($_POST['title_three'] , $_POST['three_A'] , $_POST['three_B'] , $_POST['three_C'])) {
             $data['title_three'] = $_POST['title_three'];
             $data['three_A'] = $_POST['three_A'];
             $data['three_B'] = $_POST['three_B'];
@@ -48,7 +49,7 @@ class Question extends CI_Controller
     {
         if (!isset($_POST['id'])) return $this->outPut(1, '参数缺失');
         $res = questionModel::findQuestionById($_POST['id']);
-        if (!$res) return json_encode(['code' => 1, 'msg' => '没有查询到数据']);
+        if (!$res) return $this->outPut(1, '没有查询到数据');
         $data = $this->makeData($res);
         return $this->outPut(0, $data);
     }
