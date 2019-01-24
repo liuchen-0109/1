@@ -55,7 +55,7 @@ class Question extends CI_Controller
 
     private function makeData($res)
     {
-        $data = [];
+        $data['type'] = $res->type;
         if ($res->title_one) {
             $data['question']['one'] = [
                 'title' => $res->title_one,
@@ -80,6 +80,7 @@ class Question extends CI_Controller
                 'C' => $res->three_C,
             ];
         }
+        return $data;
     }
 
 }
