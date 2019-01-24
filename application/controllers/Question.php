@@ -56,36 +56,28 @@ class Question extends CI_Controller
     private function makeData($res)
     {
         $data = [];
-        if ($res['title_one']) {
+        if ($res->title_one) {
             $data['question']['one'] = [
-                'title' => $res['title_one'],
-                'A' => $res['one_A'],
-                'B' => $res['one_B'],
-                'C' => $res['one_C'],
+                'title' => $res->title_one,
+                'A' => $res->one_A,
+                'B' => $res->one_B,
+                'C' => $res->one_C,
             ];
         }
-        if ($res['title_two']) {
+        if ($res->title_two) {
             $data['question']['two'] = [
-                'title' => $res['title_two'],
-                'A' => $res['two_A'],
-                'B' => $res['two_B'],
-                'C' => $res['two_C'],
+                'title' => $res->title_two,
+                'A' => $res->two_A,
+                'B' => $res->two_B,
+                'C' => $res->two_C,
             ];
         }
-        if ($res['title_three']) {
+        if ($res->title_three) {
             $data['question']['three'] = [
-                'title' => $res['title_three'],
-                'A' => $res['three_A'],
-                'B' => $res['three_B'],
-                'C' => $res['three_C'],
-            ];
-        }
-        if ($res['title_one']) {
-            $data['question']['one'] = [
-                'title' => $res['title_one'],
-                'A' => $res['one_A'],
-                'B' => $res['one_B'],
-                'C' => $res['one_C'],
+                'title' => $res->title_three,
+                'A' => $res->three_A,
+                'B' => $res->three_B,
+                'C' => $res->three_C,
             ];
         }
     }
