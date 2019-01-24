@@ -16,7 +16,7 @@ class Question extends CI_Controller
         $data['create_time'] = $_SERVER['REQUEST_TIME'];
         $res = questionModel::storeQuestion($data);
         if (!$res) return $this->outPut(1, '保存数据失败');
-        return $this->outPut(0, '成功');
+        return $this->outPut(0, '创建成功');
     }
 
     public function dealData()
