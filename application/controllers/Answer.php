@@ -17,9 +17,9 @@ class Answer extends CI_Controller
         $data['three'] = $_POST['three'] != 0 ? $_POST['three'] : 0;
         $data['create_time'] = $_SERVER['REQUEST_TIME'];
         $data['status'] = 1;
-        $this->outPut(1, '保存数据失败');
+        return $this->outPut(1, '保存数据失败');
         $res = answerModel::storeAnswer($data);
-        if (!$res) $this->outPut(1, '保存数据失败');
-        $this->outPut(0, "提交成功");
+        if (!$res) return $this->outPut(1, '保存数据失败');
+       return  $this->outPut(0, "提交成功");
     }
 }
