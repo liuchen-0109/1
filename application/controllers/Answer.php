@@ -11,9 +11,9 @@ class Answer extends CI_Controller
         $data = [];
         $data['openid'] = $_POST['openid'];
         $data['pid'] = $_POST['pid'];
-        $data['one'] = isset($_POST['one'])?$_POST['one']:'';
-        $data['two'] = isset($_POST['two'])?$_POST['two']:'';
-        $data['three'] = isset($_POST['three'])?$_POST['three']:'';
+        $data['one'] = isset($_POST['one'])?$_POST['one']:0;
+        $data['two'] = isset($_POST['two'])?$_POST['two']:0;
+        $data['three'] = isset($_POST['three'])?$_POST['three']:0;
         $data['create_time'] = $_SERVER['REQUEST_TIME'];
         $data['status'] = 1;
        $res =  answerModel::storeAnswer($data);
