@@ -50,8 +50,7 @@ class Question extends CI_Controller
         $res = questionModel::findQuestionById($_POST['id']);
         if (!$res) return json_encode(['code' => 1, 'msg' => '没有查询到数据']);
         $data = $this->makeData($res);
-        var_dump($data);
-        return json_encode(['code' => 0, 'data' => $data]);
+        return $this->outPut(0, $data);
     }
 
     private function makeData($res)
