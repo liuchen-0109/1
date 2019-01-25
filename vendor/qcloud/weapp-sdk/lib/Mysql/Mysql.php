@@ -49,11 +49,15 @@ class Mysql
         $prepareData = self::prepare($data);
         $prepareFieldsStr = implode(', ', array_keys($prepareData));
         $fieldsStr = implode(', ', array_keys($data));
-        $sql = "INSERT INTO `$tableName` ($fieldsStr) VALUES ($prepareFieldsStr) SELECT @@IDENTITY";
+        $sql = "INSERT INTO `$tableName` ($fieldsStr) VALUES ($prepareFieldsStr) ";
 
         // 执行 SQL 语句
-        $query = self::raw($sql, $prepareData);
-        return $query->rowCount();
+        return $query = self::raw($sql, $prepareData);
+        $res =  $query->rowCount();
+        if($res) {
+            $query = self::raw("SELECT @@IDENTITY");
+            return;
+}
     }
 
     /**
