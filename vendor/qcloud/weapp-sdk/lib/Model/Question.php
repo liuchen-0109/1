@@ -17,6 +17,6 @@ class Question
         return DB::row('question', ['*'], compact('id'));
     }
     public static function findLast ($openid,$create_time) {
-        return DB::select('question', ['id'], compact('openid','create_time'));
+        return DB::row('question', ['id'], compact('openid','create_time'));
     }
 }
