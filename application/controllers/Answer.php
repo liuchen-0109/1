@@ -21,6 +21,6 @@ class Answer extends CI_Controller
         $data['status'] = 1;
         $res = answerModel::storeAnswer($data);
         if (!$res) return $this->outPut(1, '保存数据失败');
-       return  $this->outPut(0, ['id'=>$res]);
+       return  $this->outPut(0, "提交成功");
     }
 }
