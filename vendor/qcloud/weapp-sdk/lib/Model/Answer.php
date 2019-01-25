@@ -16,7 +16,11 @@ class Answer
         return DB::row('answer', ['*'], compact('id'));
     }
 
+    public static function findAnswerByOpenidAndpid ($openid,$pid) {
+        return DB::row('answer', ['id'], compact('openid','pid'));
+    }
     public static function findAnswerByOpenidId ($openid) {
         return DB::select('answer', ['*'], compact('openid'));
     }
+
 }
