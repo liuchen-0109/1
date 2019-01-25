@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a7c75679-fee1-4af0-9bd9-ec567856cbd0" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Question.php" afterPath="$PROJECT_DIR$/application/controllers/Question.php" />
       <change beforePath="$PROJECT_DIR$/vendor/qcloud/weapp-sdk/lib/Model/Question.php" afterPath="$PROJECT_DIR$/vendor/qcloud/weapp-sdk/lib/Model/Question.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,8 +40,8 @@
       <file leaf-file-name="Question.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/vendor/qcloud/weapp-sdk/lib/Model/Question.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="19" column="63" lean-forward="false" selection-start-line="19" selection-start-column="63" selection-end-line="19" selection-end-column="63" />
+            <state relative-caret-position="528">
+              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding>
                 <element signature="e#41#80#0#PHP" expanded="true" />
               </folding>
@@ -211,7 +210,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1548417290219</updated>
-      <workItem from="1548417291303" duration="1554000" />
+      <workItem from="1548417291303" duration="1643000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1548417563627</created>
@@ -241,11 +240,18 @@
       <option name="project" value="LOCAL" />
       <updated>1548418511204</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="1">
+      <created>1548418990234</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1548418990234</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1554000" />
+    <option name="totallyTimeSpent" value="1643000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="370" y="140" width="1594" height="935" extended-state="0" />
@@ -344,8 +350,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/qcloud/weapp-sdk/lib/Model/Question.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="19" column="63" lean-forward="false" selection-start-line="19" selection-start-column="63" selection-end-line="19" selection-end-column="63" />
+        <state relative-caret-position="528">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding>
             <element signature="e#41#80#0#PHP" expanded="true" />
           </folding>
