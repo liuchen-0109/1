@@ -17,8 +17,7 @@ class Question extends CI_Controller
         $res = questionModel::storeQuestion($data);
         if (!$res) return $this->outPut(1, '保存数据失败');
         $result = questionModel::findLast($data['openid'],$_SERVER['REQUEST_TIME']);
-        var_dump($result);
-        return $this->outPut(0, ['id'=>$res]);
+        return $this->outPut(0, ['id'=>$result->id]);
     }
 
     public function dealData()
