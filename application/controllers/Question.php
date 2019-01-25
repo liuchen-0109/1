@@ -34,6 +34,7 @@ class Question extends CI_Controller
             $data['two_A'] = $_POST['two_A'];
             $data['two_B'] = $_POST['two_B'];
             $data['two_C'] = $_POST['two_C'];
+
         }
         if (isset($_POST['title_three'] , $_POST['three_A'] , $_POST['three_B'] , $_POST['three_C'])) {
             $data['title_three'] = $_POST['title_three'];
