@@ -53,10 +53,8 @@ class Mysql
 
         // 执行 SQL 语句
          $query = self::raw($sql, $prepareData);
-        $res =  $query->rowCount();
-        if($res) {
-            return  self::raw("SELECT @@IDENTITY");
-}
+        return $query->lastInsertId();
+
     }
 
     /**
