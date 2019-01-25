@@ -49,12 +49,11 @@ class Mysql
         $prepareData = self::prepare($data);
         $prepareFieldsStr = implode(', ', array_keys($prepareData));
         $fieldsStr = implode(', ', array_keys($data));
-        $sql = "INSERT INTO `$tableName` ($fieldsStr) VALUES ($prepareFieldsStr) ";
+        $sql = "INSERT INTO `$tableName` ($fieldsStr) VALUES ($prepareFieldsStr)";
 
         // 执行 SQL 语句
-         $query = self::raw($sql, $prepareData);
-        return $query->lastInsertId();
-
+        $query = self::raw($sql, $prepareData);
+        return $query->rowCount();
     }
 
     /**
