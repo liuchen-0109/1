@@ -52,11 +52,10 @@ class Mysql
         $sql = "INSERT INTO `$tableName` ($fieldsStr) VALUES ($prepareFieldsStr) ";
 
         // 执行 SQL 语句
-        return $query = self::raw($sql, $prepareData);
+         $query = self::raw($sql, $prepareData);
         $res =  $query->rowCount();
         if($res) {
-            $query = self::raw("SELECT @@IDENTITY");
-            return;
+            return  self::raw("SELECT @@IDENTITY");
 }
     }
 
