@@ -10,12 +10,14 @@ class Question extends CI_Controller
         if (!isset($_POST['openid'])) return $this->outPut(1, '用户信息缺失');
         $data = $this->dealData();
         if (!$data) return $this->outPut(1, '数据不完整');
-        $data['openid'] = isset($_POST['openid']);
+        $data['openid'] = $_POST['openid'];
         $data['type'] = isset($_POST['type']) ? $_POST['type'] : 1;
         $data['status'] = isset($_POST['status']) ? $_POST['status'] : 1;
         $data['create_time'] = $_SERVER['REQUEST_TIME'];
         $res = questionModel::storeQuestion($data);
         if (!$res) return $this->outPut(1, '保存数据失败');
+        $result = questionModel::findLast($data['openid'],$_SERVER['REQUEST_TIME']);
+        var_dump($result);
         return $this->outPut(0, ['id'=>$res]);
     }
 
