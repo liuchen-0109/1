@@ -89,9 +89,9 @@ class Question extends CI_Controller
 
     function question_list(){
         if(!isset($_POST['openid'])) return $this->outPut(1,'用户信息缺失');
-
+       
         $list = questionModel::findMyList($_POST['openid']);
         if(!$list) return $this->outPut(1,[]);
-        var_dump($list);
+        return $this->outPut(1,$list);
     }
 }
