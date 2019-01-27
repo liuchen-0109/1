@@ -88,8 +88,11 @@ class Question extends CI_Controller
     }
 
     function question_list(){
+        $page = isset($_POST['page'])?$_POST['page']:1;
+        $size = isset($_POST['size'])?$_POST['size']:10;
+        $offsize = $size*($page-1);
         if(!$_POST['openid'] || !isset($_POST['openid'])) return $this->outPut(1,'用户信息缺失');
-        $list = questionModel::findMyList($_POST['openid']);
+        $list = questionModel::findMyList($_POST['openid'],$size,$offsize);
         if(!$list) return $this->outPut(0,[]);
         return $this->outPut(1,$list);
     }

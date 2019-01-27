@@ -25,9 +25,9 @@ class Question
         return DB::row('question', ['id'], compact('openid', 'create_time'));
     }
 
-    public static function findMyList($openid)
+    public static function findMyList($openid,$size,$offsize)
     {
-        $sql =  DB::raw('SELECT * FROM question WHERE `openid`=? AND `status`=1 ORDER BY create_time',[$openid] );
+        $sql =  DB::raw('SELECT * FROM question WHERE `openid`=? AND `status`=1 limit ?,?  ORDER BY create_time DESC ',[$openid,$size,$offsize] );
         return $sql->fetchAll(2);
     }
 }
