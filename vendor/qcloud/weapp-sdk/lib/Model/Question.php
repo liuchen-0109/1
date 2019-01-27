@@ -27,7 +27,7 @@ class Question
 
     public static function findMyList($openid)
     {
-        $sql =  DB::raw('SELECT * FROM question WHERE `openid`=? AND `status`=1',[$openid] );
+        $sql =  DB::raw('SELECT * FROM question WHERE `openid`=? AND `status`=1 ORDER BY create_time',[1] );
         return $sql->fetchAll(2);
     }
 }
