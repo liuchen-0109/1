@@ -19,4 +19,7 @@ class Question
     public static function findLast ($openid,$create_time) {
         return DB::row('question', ['id'], compact('openid','create_time'));
     }
+    public static function findMyList($openid,$status=1){
+        return DB::select('question',['*'],compact('openid','status'));
+    }
 }
