@@ -1,4 +1,5 @@
 <?php
+
 namespace QCloud_WeApp_SDK\Model;
 
 use QCloud_WeApp_SDK\Mysql\Mysql as DB;
@@ -7,19 +8,27 @@ use \Exception;
 
 class Question
 {
-    public static function storeQuestion ($data) {
+    public static function storeQuestion($data)
+    {
 
-          return  DB::insert('question', $data);
+        return DB::insert('question', $data);
 
     }
 
-    public static function findQuestionById ($id) {
+    public static function findQuestionById($id)
+    {
         return DB::row('question', ['*'], compact('id'));
     }
-    public static function findLast ($openid,$create_time) {
-        return DB::row('question', ['id'], compact('openid','create_time'));
+
+    public static function findLast($openid, $create_time)
+    {
+        return DB::row('question', ['id'], compact('openid', 'create_time'));
     }
-    public static function findMyList($openid,$status=1){
-        return DB::select('question',['*'],compact('openid','status'),'','ORDER BY create_tinme');
+
+    public static function findMyList($openid)
+    {
+        $statement = $db->prepare('SELECT * FROM question WHERE `openid`=? AND `status`=1');
+        $statement->bindValue(1, $openid);
+        return $statement->Fetch();
     }
 }

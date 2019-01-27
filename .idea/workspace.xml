@@ -4,6 +4,7 @@
     <list default="true" id="a7c75679-fee1-4af0-9bd9-ec567856cbd0" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/application/controllers/Question.php" afterPath="$PROJECT_DIR$/application/controllers/Question.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/qcloud/weapp-sdk/lib/Model/Question.php" afterPath="$PROJECT_DIR$/vendor/qcloud/weapp-sdk/lib/Model/Question.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,13 +18,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Question.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Question.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/Question.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="649">
-              <caret line="95" column="29" lean-forward="false" selection-start-line="95" selection-start-column="29" selection-end-line="95" selection-end-column="29" />
+            <state relative-caret-position="549">
+              <caret line="92" column="60" lean-forward="false" selection-start-line="92" selection-start-column="60" selection-end-line="92" selection-end-column="60" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Question.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/vendor/qcloud/weapp-sdk/lib/Model/Question.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="501">
+              <caret line="27" column="45" lean-forward="false" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
               <folding>
-                <marker date="1548582588343" expanded="true" signature="3235:3289" ph="SELECT * FRO... question" />
+                <element signature="e#42#81#0#PHP" expanded="true" />
+                <marker date="1548582763020" expanded="true" signature="615:669" ph="SELECT * FRO... question" />
               </folding>
             </state>
           </provider>
@@ -34,16 +46,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="576">
               <caret line="24" column="5" lean-forward="true" selection-start-line="23" selection-start-column="7" selection-end-line="24" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Question.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/qcloud/weapp-sdk/lib/Model/Question.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="3" column="29" lean-forward="true" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -98,8 +100,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/application/controllers/Answer.php" />
-        <option value="$PROJECT_DIR$/vendor/qcloud/weapp-sdk/lib/Model/Question.php" />
         <option value="$PROJECT_DIR$/application/controllers/Question.php" />
+        <option value="$PROJECT_DIR$/vendor/qcloud/weapp-sdk/lib/Model/Question.php" />
       </list>
     </option>
   </component>
@@ -211,7 +213,7 @@
       <option name="presentableId" value="Default" />
       <updated>1548417290219</updated>
       <workItem from="1548417291303" duration="2308000" />
-      <workItem from="1548489931403" duration="2961000" />
+      <workItem from="1548489931403" duration="3133000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1548417563627</created>
@@ -297,11 +299,18 @@
       <option name="project" value="LOCAL" />
       <updated>1548581976925</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="1">
+      <created>1548582596546</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1548582596546</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5269000" />
+    <option name="totallyTimeSpent" value="5441000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="173" y="133" width="1594" height="935" extended-state="0" />
@@ -373,14 +382,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/Answer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="24" column="5" lean-forward="true" selection-start-line="23" selection-start-column="7" selection-end-line="24" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -394,14 +395,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/qcloud/weapp-sdk/lib/Model/Question.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="29" lean-forward="true" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/qcloud/weapp-sdk/lib/Mysql/Mysql.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3955">
@@ -410,12 +403,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Answer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="24" column="5" lean-forward="true" selection-start-line="23" selection-start-column="7" selection-end-line="24" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Question.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="649">
-          <caret line="95" column="29" lean-forward="false" selection-start-line="95" selection-start-column="29" selection-end-line="95" selection-end-column="29" />
+        <state relative-caret-position="549">
+          <caret line="92" column="60" lean-forward="false" selection-start-line="92" selection-start-column="60" selection-end-line="92" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/qcloud/weapp-sdk/lib/Model/Question.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="27" column="45" lean-forward="false" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
           <folding>
-            <marker date="1548582588343" expanded="true" signature="3235:3289" ph="SELECT * FRO... question" />
+            <element signature="e#42#81#0#PHP" expanded="true" />
+            <marker date="1548582763020" expanded="true" signature="615:669" ph="SELECT * FRO... question" />
           </folding>
         </state>
       </provider>
