@@ -27,7 +27,7 @@ class Question
 
     public static function findMyList($openid,$size,$offsize)
     {
-        $sql =  DB::raw("SELECT * FROM question WHERE `openid`=? AND `status`=1   ORDER BY id DESC  limit $offsize,$size",[$openid] );
+        $sql =  DB::raw("SELECT * FROM question WHERE `openid`=? AND `status`=1   ORDER BY create_time limit $offsize,$size",[$openid] );
         return $sql->fetchAll(2);
     }
 }
