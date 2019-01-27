@@ -89,7 +89,11 @@ class Question extends CI_Controller
 
     function question_list(){
         if(!isset($_POST['openid'])) return $this->outPut(1,'用户信息缺失');
-        $list = questionModel::findMyList($_POST['openid']);
+        $db = new questionModel();
+        $statement = $db->prepare('SELECT * FROM question WHERE `openid`=? AND `status`=1');
+        $statement->bindValue(1, $_POST['openid']);
+        $list = $statement->Fetch();
+        var_dump($list);exit;
         if(!$list) return $this->outPut(1,[]);
         var_dump($list);
     }
