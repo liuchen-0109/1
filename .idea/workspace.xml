@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a7c75679-fee1-4af0-9bd9-ec567856cbd0" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Question.php" afterPath="$PROJECT_DIR$/application/controllers/Question.php" />
       <change beforePath="$PROJECT_DIR$/vendor/qcloud/weapp-sdk/lib/Model/Question.php" afterPath="$PROJECT_DIR$/vendor/qcloud/weapp-sdk/lib/Model/Question.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,7 +22,7 @@
         <entry file="file://$PROJECT_DIR$/application/controllers/Question.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="265">
-              <caret line="94" column="36" lean-forward="false" selection-start-line="94" selection-start-column="36" selection-end-line="94" selection-end-column="36" />
+              <caret line="94" column="34" lean-forward="false" selection-start-line="94" selection-start-column="34" selection-end-line="94" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -30,14 +31,14 @@
       <file leaf-file-name="Question.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/vendor/qcloud/weapp-sdk/lib/Model/Question.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="29" column="25" lean-forward="false" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+            <state relative-caret-position="289">
+              <caret line="29" column="100" lean-forward="false" selection-start-line="29" selection-start-column="100" selection-end-line="29" selection-end-column="100" />
               <folding>
                 <element signature="e#42#81#0#PHP" expanded="true" />
-                <marker date="1548586809438" expanded="true" signature="620:658" ph="SELECT * FRO... question" />
-                <marker date="1548586809438" expanded="true" signature="620:674" ph="SELECT * FRO... question" />
-                <marker date="1548586809438" expanded="true" signature="620:711" ph="SELECT * FRO... question" />
-                <marker date="1548586809438" expanded="true" signature="620:756" ph="SELECT * FRO... question" />
+                <marker date="1548586914820" expanded="true" signature="620:658" ph="SELECT * FRO... question" />
+                <marker date="1548586914820" expanded="true" signature="620:674" ph="SELECT * FRO... question" />
+                <marker date="1548586914820" expanded="true" signature="620:722" ph="SELECT * FRO... question" />
+                <marker date="1548586914820" expanded="true" signature="620:736" ph="SELECT * FRO... question" />
               </folding>
             </state>
           </provider>
@@ -238,7 +239,7 @@
       <option name="presentableId" value="Default" />
       <updated>1548417290219</updated>
       <workItem from="1548417291303" duration="2308000" />
-      <workItem from="1548489931403" duration="5431000" />
+      <workItem from="1548489931403" duration="5537000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1548417563627</created>
@@ -415,11 +416,18 @@
       <option name="project" value="LOCAL" />
       <updated>1548586702917</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="1">
+      <created>1548586812498</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1548586812498</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7739000" />
+    <option name="totallyTimeSpent" value="7845000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="252" y="164" width="1594" height="935" extended-state="0" />
@@ -532,21 +540,21 @@
     <entry file="file://$PROJECT_DIR$/application/controllers/Question.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="265">
-          <caret line="94" column="36" lean-forward="false" selection-start-line="94" selection-start-column="36" selection-end-line="94" selection-end-column="36" />
+          <caret line="94" column="34" lean-forward="false" selection-start-line="94" selection-start-column="34" selection-end-line="94" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/qcloud/weapp-sdk/lib/Model/Question.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="29" column="25" lean-forward="false" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+        <state relative-caret-position="289">
+          <caret line="29" column="100" lean-forward="false" selection-start-line="29" selection-start-column="100" selection-end-line="29" selection-end-column="100" />
           <folding>
             <element signature="e#42#81#0#PHP" expanded="true" />
-            <marker date="1548586809438" expanded="true" signature="620:658" ph="SELECT * FRO... question" />
-            <marker date="1548586809438" expanded="true" signature="620:674" ph="SELECT * FRO... question" />
-            <marker date="1548586809438" expanded="true" signature="620:711" ph="SELECT * FRO... question" />
-            <marker date="1548586809438" expanded="true" signature="620:756" ph="SELECT * FRO... question" />
+            <marker date="1548586914820" expanded="true" signature="620:658" ph="SELECT * FRO... question" />
+            <marker date="1548586914820" expanded="true" signature="620:674" ph="SELECT * FRO... question" />
+            <marker date="1548586914820" expanded="true" signature="620:722" ph="SELECT * FRO... question" />
+            <marker date="1548586914820" expanded="true" signature="620:736" ph="SELECT * FRO... question" />
           </folding>
         </state>
       </provider>
