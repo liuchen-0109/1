@@ -27,8 +27,6 @@ class Question
 
     public static function findMyList($openid)
     {
-        $statement = $db->prepare('SELECT * FROM question WHERE `openid`=? AND `status`=1');
-        $statement->bindValue(1, $openid);
-        return $statement->Fetch();
+        return DB::raw('SELECT * FROM question WHERE `openid`='.$openid.' AND `status`=1');
     }
 }
